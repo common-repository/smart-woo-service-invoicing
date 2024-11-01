@@ -1,0 +1,1429 @@
+/**
+ * This file contains all the CSS File for this plugin although there are some point where it was neccessary for us to
+use inline CSS to overide some styles
+ */
+.smartwoo-hide {
+	display: none;
+}
+
+/************************************************************************************/
+/**************************CSS for admin pages starts here **********************************/
+/************************************************************************************/
+
+/************** Button CSS******************/
+
+
+.sw-red-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #db5534;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 9px;
+	border: 2px solid #fafafa;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.sw-red-button:focus {
+	color: rgb(250, 250, 9);
+	text-decoration: underline;
+}
+
+/* Style for the on hover */
+.sw-red-button:hover {
+	background-color: #2980b9;
+	color: rgb(250, 250, 9);
+}
+
+.sw-blue-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0073e6; /* Button background color */
+	color: #fff; /* Text color */
+	text-decoration: none;
+	border: 2px solid #fafafa;
+	border-radius: 9px;
+	cursor: pointer;
+	margin: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s, color 0.3s;
+}
+.sw-blue-button:focus {
+	color: rgb(236, 236, 13);
+	text-decoration: underline;
+
+}
+.sw-blue-button:hover {
+	background-color: #3f8fe6;
+	color: rgb(236, 236, 13);
+}
+
+
+.account-button {
+	margin: 0 10px;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	font-size: 14px;
+	background-color: red;
+	color: white;
+	border-radius: 9px;
+}
+
+.sw-pagination-buttons {
+	display: flex;
+	background-color: #ffffff;
+	width: 15% auto;
+	border: solid 0.5px blue;
+	border-radius: 5px;
+	float: right !important;
+	margin-right: 15px;
+	margin-left: 60px;
+	margin-bottom: 10px;
+}
+
+.sw-pagination-buttons p, .sw-pagination-buttons a {
+	margin: 8px;
+	font-weight: bold;
+}
+
+.sw-pagination-buttons a button {
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.sw-pagination-buttons a button span {
+	padding: 2px auto;
+	font-size: 18px;
+	color: #000;
+}
+
+/************** Button CSS Ends here******************/
+
+/* Service Product form goes here*/
+
+/* Apply styles to form labels */
+
+.sw-textarea{
+	width: 400px;
+	padding: 8px;
+	margin-bottom: 10px;
+	height:250px;
+}
+
+/* Apply styles to the image preview container */
+.sw-form-image-preview {
+	margin-top: 10px;
+	width: 100%;
+	max-width: 250px;
+}
+
+/* Style for the Grace Period number input */
+.grace-period-number {
+	width: 80px;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+/* Style for the Grace Period unit select */
+.select-grace-period-unit {
+	max-width: 20px;
+	padding: 6px; /* Adjust the padding as needed */
+}
+
+/* Service Product form ends here*/
+
+/************************************All form CSS starts here****************************************/
+
+.sw-form-container {
+	max-width: 90%;
+	justify-content: space-around;
+	margin: 20px 0;
+	padding: 20px;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+	margin-bottom: 20px;
+}
+
+.sw-assets-div {
+	display: none;
+	justify-content: space-evenly;
+	background-color: #ffffff;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.sw-assets-div.show {
+	display: flex;
+}
+
+.sw-assets-div  .line {
+	border-right: solid 0.02px;
+}
+.sw-product-download-field-container {
+	display: none;
+	background-color: #fff;
+	margin: 20px auto;
+	padding: 10px;
+	
+}
+
+.sw-product-download-field-container.show {
+	display: block;
+	margin-left: 5px;
+	width: 100%;
+
+}
+
+.sw-product-download-fields {
+    margin: 20px auto;
+	width: 90%;
+}
+
+.sw-product-type-container label {
+	font-weight: 500;
+    display: inline;
+    margin-bottom: 20px;
+	
+}
+
+.sw-product-download-fields input,
+.sw-product-download-fields button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.sw-product-download-fields .swremove-field {
+    color: red;
+    cursor: pointer;
+}
+.sw-additional-assets {
+	width: 40%;
+	padding: 10px;
+	margin: 20px auto;
+}
+.sw-additional-assets .sw-additional-assets-field input {
+	margin: 5px 5px;
+	width: 90%;
+}
+.sw-additional-assets button {
+	margin-top: 10px;
+}
+
+/* CSS for the product configuration container */
+.smartwoo_template {
+	position: relative;
+	padding: 5px;
+	margin: 0 auto;
+	width: 100%;
+}
+.smartwoo_template #error-container .sw-error-notice {
+	width: 80%;
+}
+.sw-configure-container {
+	max-width: 99%;
+	padding: 20px;
+	margin: 10px auto;
+	background-color: #fff;
+	border: 2px solid #faefef;
+	border-radius: 9px;
+	/* box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2); */
+}
+.sw-configure-container form input {
+	border: solid blue .5px;
+	border-radius: 3px;
+	width: 40%;
+	margin-right: 18%;
+}
+
+@media ( min-width: 280px ) and ( max-width: 425px ) {
+	.sw-configure-container form input {
+		width: 50%;
+		margin-right: 5%;
+	}
+	.sw-assets-div {
+		flex-wrap: wrap;
+	}
+	.sw-product-download-field-container.show {
+		margin: auto;
+	}
+	
+	.sw-assets-div .line {
+		display: none;
+	}
+	.sw-additional-assets {
+		width: 100%;
+		padding: 2px;
+	}
+
+}
+
+/* Styles for inv-settings-form */
+.inv-settings-form {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.sw-form-row {
+display: flex;
+align-items: center;
+margin-bottom: 10px; /* Add some spacing between rows */
+}
+
+
+.sw-form-label {
+flex: 1;
+font-size: 14px;
+font-weight: bold;
+margin-right: 10px;
+
+}
+
+.sw-form-checkbox {
+flex: 0.7;
+font-size: 14px;
+font-weight: bold;
+margin-right: 10px;
+
+}
+
+.sw-field-description {
+background-color: black;
+color: rgb(255, 255, 255);
+border-radius: 50%;
+padding: 2px;
+font-weight: bold;
+font-size: 11px;
+text-align: center;
+
+}
+
+/* Style for form descriptions (visible on hover) */
+.sw-field-description {
+margin-left: 5px; /* Add some space between the label and the question mark */
+cursor: help;
+position: relative;
+}
+
+
+
+.sw-cart-form {
+width: 100%;
+}
+
+
+.sw-form-input {
+max-width: 400px;
+padding: 8px;
+margin-bottom: 10px;
+width: 100%;
+
+border: 2px solid #fffefe;
+box-sizing: border-box;
+
+border-radius: 5px;
+}
+
+@media ( min-width: 280px ) and ( max-width: 425px ) {
+	.sw-form-row {
+		flex-wrap: wrap;
+	}
+}
+
+/************************************All form CSS ends here****************************************/
+
+
+/*********************Invoice Page CSS Starts Here*********************************/
+/*Invoice Details page*/
+/* Style for the main container */
+.invoice-details {
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+
+/* Style for the heading */
+.invoice-details h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* Style for each invoice detail item */
+.smartwoo-container-item {
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-items: center;
+	width: 100%;
+}
+
+.smartwoo-container-item p {
+	margin: 40%;
+	text-align: right;
+}
+
+.smartwoo-container-item span {
+	justify-self: center;
+	font-weight: bold;
+	font-size: 16px;
+	width: 50%;
+	padding: 0px;
+}
+
+/* Style for the "Invoice not found" message */
+.smartwoo-container-item.not-found {
+	color: red;
+	font-style: italic;
+}
+
+.sw-error-notice {
+	margin: 20px auto;
+	padding: 10px;
+	border: 2px solid #f55247;
+	border-radius: 8px;
+	background-color: #ffffff;
+	color: #000000;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 10px !important;
+}
+.sw-error-notice p {
+	text-align: left;
+}
+.sw-notice{
+	margin: 20px auto;
+	padding: 10px;
+	min-height: 40px;
+	border: 1px solid #1764f5;
+	border-radius: 8px;
+	background-color: #ffffff;
+	color: #000000;
+	width: 50%;
+	text-align: center;
+}
+.sw-notice p { 
+	font-weight: bold; 
+	text-align: center;
+	max-width: 100%;
+}
+.sw-service-notice {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(118, 248, 118, 0.479);
+	width: 80%;
+	border-left: solid red 3px;
+	color: #000000;
+	margin: 0 auto;
+	padding: 5px;
+	gap: 5px;
+	align-items: center;
+}
+.sw-service-notice p {
+	font-weight: bold;
+}
+.sw-service-notice a {
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+/* Settings and Documentation CSS */
+.sw-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sw-left-column {
+	background-color: #fff;
+	border-radius: 9px;
+	padding: 20px;
+	width: 20%;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+}
+.sw-right-column {
+	background-color: #fff;
+	border-radius: 9px;
+	padding: 20px;
+	width: 70%;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+
+}
+
+.sw-right-column .image-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sw-left-column ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sw-left-column li {
+	margin: 40px;
+	text-align: center;
+
+}
+
+.instruction {
+	display: none;
+}
+
+.settings-nav{
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: rgb(121, 59, 88);
+	color: rgb(255, 255, 0);
+	border: 2px solid #7589fc;
+	width: 100px;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.settings-nav:hover{
+	color: #fafafa
+}
+.settings-nav:focus{
+	color: #fafafa;
+	box-shadow: 0 10px 10px rgba(248, 7, 7, 0.959);
+
+}
+
+
+
+/************************************************************************************/
+/**************************CSS for admin pages ends here*****************************/
+/************************************************************************************/
+
+/************************************************************************************/
+/**************************FrontEnd  CSS Starts here **********************************/
+/************************************************************************************/
+
+
+/* Style for the service navigation bar */
+.service-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.navbar-title-container h3 {
+    margin: 0;
+}
+
+.navbar-links-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links-container li {
+    margin-left: 15px;
+}
+
+.navbar-links-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sw-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.smart-woo-logout {
+	cursor: pointer;
+}
+.smartwoo-logout-frame {
+	display: none;
+	position: fixed;
+	left: 55%;
+	width: 35%;
+	border-radius: 9px;
+	z-index: 9999;
+	background-color: #333;
+}
+.smartwoo-logout-contaner {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	padding: 20px;
+	margin: 20px auto;
+	border-radius: 9px;
+	height: 150px;
+	background-color: #ffffff;
+	align-items: center;
+}
+.smartwoo-logout-contaner p{
+	color: #000;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	background-color: #ffffff;
+	width: 100%;
+}
+@media (max-width: 768px) {
+	.smartwoo-logout-frame {
+		width: 45%;
+		left: 35%;
+	}
+	.smartwoo-logout-contaner {
+		width: 70%;
+	}
+	@media (max-width: 617px) {
+		.smartwoo-logout-frame {
+			width: 90%;
+			left: 5%;
+		}
+	}
+    .navbar-links-container {
+        display: none;
+    }
+
+    .sw-menu-icon {
+        display: block;
+    }
+
+    .navbar-links-container ul {
+        flex-direction: column;
+    }
+
+    .navbar-links-container li {
+        margin: 10px 0;
+    }
+
+    .service-navbar.active .navbar-links-container {
+		position: absolute;
+        display: flex;
+		left: 75%;
+		width: 20%;
+		top: 60px;
+		background-color: #fff;
+		padding: 15px;
+		border-top-left-radius: 9px;
+		border-bottom-left-radius: 9px;
+		z-index: 9999;
+    }
+
+	@media (min-width: 280px) and (max-width: 425px) {
+		.service-navbar.active .navbar-links-container {
+			left: 65%;
+			width: 30%;
+		}
+	}
+}
+
+#smartwooNoticeDiv{
+	position:absolute;
+	z-index:1000;
+	width:80%;
+}
+
+
+/* Add some basic styling to the container */
+.status-counts {
+	display: flex;
+	justify-content: space-around;
+	background-color: #333;
+	padding: 10px;
+}
+
+/* Style each status count link */
+.status-counts p {
+	margin: 0;
+}
+
+.status-counts a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.status-counts a:hover {
+	background-color: #0056b3;
+}
+
+.smartwoo-front-assets-container {
+	display: none;
+}
+
+.smartwoo-page {
+	position: relative;
+	padding: 5px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Table Styles */
+.sw-table-wrapper {
+    overflow-x: auto;
+}
+
+.sw-table {
+    width: 90%;
+    border-collapse: collapse;
+	border-radius: 9px;
+	margin: 20px auto;
+    background-color: #fff;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+    overflow: hidden;
+}
+
+.sw-table th, .sw-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.sw-table th {
+    background-color: #ffe1f5;
+    color: #0e0101;
+	font-weight: bold;
+}
+
+.sw-table:hover {
+    background-color: #ffffff;
+	box-shadow: none;
+
+}
+
+.sw-table-count {
+	text-align: right;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* Responsive Styles for mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+	@media (max-width: 375px) {
+		.smartwoo-container-item {
+			flex-wrap: wrap;
+		}
+	}
+
+    .sw-table {
+        width: 90%;
+        max-width: 100%; /* Adjusted to take full width on small screens */
+        box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+        overflow-x: auto; /* Added to enable horizontal scrolling if needed */
+    }
+
+    .sw-table thead,
+    .sw-table tbody,
+    .sw-table th,
+    .sw-table td,
+    .sw-table tr {
+        display: block;
+    }
+
+    .sw-table tbody tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sw-table tbody td {
+        text-align: left;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        width: 100%; /* Make the cells take full width */
+    }
+}
+
+/* service-cards.css */
+.service-card {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+}
+
+/* Style for the mini service cards */
+.service-mini-card {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+}
+
+.service-mini-card p {
+	margin: 0;
+	font-size: 16px;
+}
+
+.service-mini-card a.button {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 8px 16px;
+	background-color: #0073e6;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.service-mini-card a.button:hover {
+	background-color: #005bbd;
+}
+
+/* Style for the outer container of service cards on the main page */
+.client-services {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Style for each individual service card on the main page */
+.main-page-card {
+	border: 1px solid #1764f5;
+	border-radius: 8px;
+	padding: 20px;
+	margin: 10px auto;
+	width: 350px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	text-align: center;
+	transition: transform 0.2s ease-in-out;
+}
+
+.main-page-card:hover {
+	transform: translateY(-5px);
+}
+
+.main-page-card h3 {
+	font-size: 20px;
+	margin: 0;
+	padding-bottom: 10px; /* Space between service name and other details */
+	border-bottom: 1px solid #ccc; /* Horizontal line below the service name */
+	color: #333;
+}
+
+.main-page-card p {
+	font-size: 14px;
+	color: #666;
+	margin: 10px 0;
+}
+
+/* Style for the "View Details" button on the main page */
+.main-page-card .view-details-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0073e6;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.main-page-card .view-details-button:hover {
+	background-color: #0056b3;
+}
+
+.main-page-card .sw-notice {
+	width: 100%;
+}
+/* Media query for smaller screens */
+@media (min-width: 280px) and (max-width: 768px) {
+	.main-page-card {
+		width: 45%;
+	}
+	@media (min-width:280px) and (max-width:425px) {
+		.client-services {
+			flex-direction: column;
+		}
+		.main-page-card {
+			width: 80%;
+		}
+	}
+	.client-services {
+		flex-wrap: wrap;
+	}
+}
+
+/** Style for assets container */
+.smartwoo-assets-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.smartwoo-assets-container .serv-details-card {
+	width: 45%;
+}
+
+@media (min-width: 320px) and ( max-width: 768px) {
+	.smartwoo-assets-container {
+		flex-wrap: wrap;
+	}
+	.smartwoo-assets-container .serv-details-card {
+		width: 95%;
+	}
+}
+/* Style for the service details card */
+.serv-details-card {
+	padding: 20px;
+	align-items: center;
+	border-radius: 9px;
+	margin: 20px auto;
+	width: 70%;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+	background-color: #ffffff;
+	transition: transform 0.2s ease-in-out;
+}
+
+.serv-details-card:hover {
+	transform: translateY(-5px);
+	box-shadow: none;
+
+}
+
+.serv-details-card h3 {
+	font-size: 20px;
+	margin: 0;
+	padding-bottom: 10px; /* Space between service name and other details */
+	border-bottom: 1px solid #ccc; /* Horizontal line below the service name */
+	font-weight: bold;
+	text-align: center;
+}
+
+.serv-details-card p {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+/* Style for the "Open Service" button on the service details card */
+.serv-details-card .open-service-button {
+	display: block; /* Display as block element to center */
+	margin: 0 auto; /* Center horizontally */
+	padding: 10px 20px;
+	background-color: #e66f00;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.2s ease-in-out;
+	text-align: center;
+
+}
+
+.serv-details-card .open-service-button:hover {
+	background-color: #0056b3;
+	color: white;
+}
+
+/* Style for the "My Services" heading */
+.mini-card h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+	border-bottom: 1px solid #1707f5; /* Add a border below the heading */
+	padding-bottom: 5px; /* Add some space between the heading and the border */
+}
+
+/* Style for the mini-card container */
+.mini-card {
+	background-color: rgb(255, 255, 255);
+	max-width: 600px;
+	width: 50%;
+	border-radius: 9px;
+	justify-content: space-around;
+	margin: 20px auto;
+	padding: 20px;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+	margin-bottom: 20px;
+}
+
+
+/* Style for each service name link and status */
+.mini-card p {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mini-card a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.mini-card a:hover {
+	text-decoration:double;
+}
+
+/* Style for the horizontal line */
+.mini-card hr {
+	margin: 5px 0;
+	border: 1px solid #13003f;
+}
+
+
+
+/* Style for the "Renew" button */
+.renew-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #4caf50; /* Green color */
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-left: 10px; /* Add margin to separate from the "Back to Services" button */
+	transition: background-color 0.2s ease-in-out;
+}
+
+.renew-button:hover {
+	background-color: #45a049; /* Darker green color on hover */
+}
+
+
+.invoice-pay-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #f4511e;
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.invoice-preview-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #5c06e6;
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.invoice-preview-button:hover{
+	color: #ffffff;
+}
+
+
+
+.invoice-status-counts {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px auto;
+	background-color: #ffffff;
+	border: 1px solid #918d8d;
+	border-radius: 7px;
+	padding: 20px;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+	text-align: center;
+	margin-bottom: 20px;
+	max-width: 800px;
+	width: 90% auto;
+}
+.invoice-status-counts p a {
+	text-decoration: none;
+}
+.status-item {
+	flex-basis: calc(50% - 10px);
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+	background-color: #ffffff;
+
+}
+.invoice-status-counts p a small {
+	background-color: red;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+
+}
+@media (min-width: 280px) and (max-width: 369px) {
+	.invoice-status-counts {
+		flex-wrap: wrap;
+		width: 100%;
+		margin: none;
+		
+	}
+}
+
+
+
+.transaction-status-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.transaction-status-list li {
+	margin: 10px 0; /* Add margin at the bottom of each list item */
+	font-weight: bold;
+	color: #000;
+}
+
+
+/* Container for Settings and Tools Section */
+.settings-tools-section {
+	align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+	width: 90%;
+}
+
+/* Header Style */
+.settings-tools-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.sw-button-container {
+    display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #1764f5;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+/* AJAX Content Container Style */
+#ajax-content-container {
+    margin-top: 20px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Style the user details container */
+.smartwoo-details-container {
+	border: 1px solid #ccc;
+	border-radius: 8px; /* Add rounded corners for a card-like appearance */
+	overflow: hidden; /* Ensure rounded corners are applied */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+	padding: 20px;
+	margin: 20px auto; /* Center the container and control left/right margin */
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+/* Style the heading within the container */
+.smartwoo-details-container h3 {
+	margin: 10px;
+	padding: 10px; 
+	font-size: 18px;
+	background-color: red;
+	color: white;
+	border-radius: 9px;
+}
+
+
+/* Form Containers and Input fields*/
+.sw-cart-form {
+	width: 100%;
+}
+
+/**Product subscription info */
+.smartwoo-sub-info {
+	background-color: #ffffff;
+	border-left: solid #ff0303;
+	margin: 10px 0 10px 0;
+	padding: 10px;
+}
+
+
+/** Product CSS **/
+.sw-products-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.sw-product-container {
+	background-color: #ffffff;
+	box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+	width: 30%;
+	margin: 20px 10px;
+	padding: 10px;
+	border-radius: 9px;
+}
+
+.sw-product-container h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.sw-product-container p {
+	margin-bottom: 8px;
+}
+
+.sw-products-container .sw-description {
+	height: 200px;
+	overflow: hidden;
+}
+
+.sw-products-container .sw-description:hover {
+	overflow: auto;
+}
+.sw-products-container .sw-red-button {
+	float: right;
+	margin-top: 15px;
+}
+
+/* Responsive styling */
+@media (min-width: 280px) and (max-width: 425px) {
+	.sw-products-container {
+		flex-wrap: wrap;
+	}
+	.sw-product-container {
+		width: 40%;
+	}
+
+	@media (min-width: 280px) and (max-width: 375px) {
+		.sw-product-container {
+			width: 80%;
+			margin: 20px auto;
+		}
+	}
+}
+
+.sw-configured-product-container {
+	display: block;
+	
+}
+
+.sw-configured-product {
+color: rgb(56, 104, 236);
+text-decoration:rgb(236, 236, 13);
+font-family: poppins;
+font-weight: 100;
+}
+.sw-delete-product-container {
+	display: flex;
+	
+}
+
+#swloader {
+	display: none;
+	width: 150px;
+	background-color: #eb0d0d;
+	color: rgb(255, 255, 255);
+	position: fixed;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 50%;
+	font-weight: bold;
+	text-align: center;
+	z-index: 999;
+	animation: smartwoopulse 0.3s infinite ease-in-out;
+}
+
+@keyframes smartwoopulse {
+	0%, 100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+}
+@media ( min-width: 320px ) and (max-width: 720px ) {
+	#swloader {
+		left: 30%;
+	}
+}
+
+/************************************************************************************/
+/**************************Front End CSS ends here **********************************/
+/************************************************************************************/
+
+
+.sw-accordion-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(3, 1, 2, 0.2);
+    background-color: rgb(255, 230, 230);
+    height: auto;
+
+}
+
+.sw-accordion-container:hover{
+    box-shadow:none;
+}
+
+.sw-accordion-container .sw-accordion-btn{
+	justify-items: center;
+}
+
+/* Style the accordion */
+.sw-upsell-accordion {
+    margin-bottom: 20px;
+    margin-top: 40px;
+	margin-left: 20px;
+	width: 100%;
+}
+
+/* Style the accordion button */
+.sw-accordion-btn {
+	
+    background-color: #f50000;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 9px;
+    border: none;
+	border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s ease;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 40px;
+    margin-right: 40px;
+	margin-bottom: 10px;
+
+}
+
+/* Style the active button */
+.sw-accordion-btn:hover {
+    background-color: #355ee7;
+	color: #8eff0e;
+}
+
+/* Style the active button */
+.sw-accordion-btn.active {
+    background-color: #0e0101;
+	color: rgb(255, 255, 255);
+}
+
+/* Style the accordion panel */
+.sw-upsell-panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+	max-width: 80%;
+	padding: 9px;
+
+}
+
+.sw-upsell-panel p {
+	font-weight: bold;
+}
+
+/* Show the panel when the button is clicked */
+.sw-upsell-accordion.active .sw-upsell-panel {
+    display: block;
+}
+
+
+/****************LOGIN FORM **********************/
+.smartwoo-login-form{
+	background-color: #ffffff;
+	border-radius: 9px;
+	margin-bottom: 20px !important;
+	width: 70%;	
+}
+
+.smartwoo-login-form-content{
+	width: 95%;
+	margin: 20px auto;
+	padding: 20px;
+}
+.smartwoo-login-form-notice {
+	text-align: left;
+	font-weight: bold;
+}
+.smartwoo-login-form-notice .sw-notice {
+	width: 100%;
+}
+
+.smartwoo-login-form-body {
+	position:relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.smartwoo-login-form-label {
+	font-weight: bold;
+	color: #000000;
+	margin-left: 5px;
+	padding: 10px;
+	min-width: 30%;
+	background-color: #f1f1f5;
+	height: 57px;
+}
+
+.smartwoo-login-input {
+	display: flex;
+	border-radius: 5px;
+	width: 100%;
+	height: 50px;
+}
+.smartwoo-login-form-body span {
+	position:absolute;
+	left: 95%;
+}
+@media only screen and (min-width: 222px) and (max-width: 480px) {
+	.smartwoo-login-form {
+		width: 100%;
+	}
+	.smartwoo-login-form-body {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.smartwoo-login-form-label{
+		margin-left: 0px;
+		width: 100%;
+	}
+	.smartwoo-login-input{
+		display: block;
+		margin-left: 0px;
+		width: 100%;
+
+	}
+	.smartwoo-login-form-body span {
+		left: 90%;
+		top: 65%;
+	}
+}
